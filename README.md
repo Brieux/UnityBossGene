@@ -1,0 +1,50 @@
+# UnityBossGeneToDo Reutilisation :
+	- Il faut r�adapter la salle � la bonne taille
+	- Mettre les pr�fabs au bon endroit dans les scripts
+	- R�ajuster les variables (yMin ,xMax,etc...)
+*---------------------------------------------------------------------------------------*
+Guide d'utilisation des scripts et prefab necessaire
+Generates
+	- Le prefab qui correspond au platforme sur lesquelles le joueurs va sauter (tag en ground pour pouvoir sauter apres avoir etait dessus) avec le script Mouvement
+	- On peut modifier la vitesse d'apparition des platforme et il faut choisir sa taille
+Boss Attack
+	- Plein de truc a mettre dedans 
+	- Delais d'attaque a modifier avec StartTimeBtwAttack
+From The Top
+	- Mettre le prefab du truc qui tombe avec le script FallingAttack
+	- Modifier les valeurs type taille ou positionnement
+From The Cam
+	- Mettre le prefab du truc qui va sur la map avec le script CircleAttack
+	- Modifier les valeurs type taille ou positionnement
+Poison
+	- Desol� mais faut quasi tout faire c'est celui ou j'ai juste fais un visuel pour voir si ca fonctionne
+Zone Triangulaire
+	- Mettre le prefab Tetrahedron  avec son script de boxColldier et DAAttaque 
+	- Voir avec In�s pour ajuster les var parce que c'est un peu dur xD
+Shoot
+	- 3 Prefab a mettre : la cible dans target, l'origine du tir dans shoot et le projectile dans shootingGO avec le script ShootingMove
+*---------------------------------------------------------------------------------------*
+Guide des variables
+Generates
+	- Vitesse a modifier = Start Time Btw Generate
+	- X Start = position de depart en largeur
+	- Y max = hauteur max
+	- augmenter le pourcentage de chance -> dans le script j'ai oubli� de mettre une var
+	- Si il faut agrandir la zone pour laquelle les platforme pop dans le milieu -> Diff
+	- Vitesse des platforme trop lente ? -> Augmenter Speed dans le script des paltforme
+Boss Attack
+	- + de delais entre les attack -> Agrandir StartTimeBtwAttack
+From The Top
+	- Vitesse du truc qui tombe trop lent ? -> Dans le prefab : la variable speed 
+	- Il ne descends pas assez bas ? -> minY dans le prefab 
+From The Cam
+	- Temps de retrecissement trop long ? -> diminuer StartTimeForRescale
+	- temps d'activation -> time for stay
+	- taille trop grosse a la fin ? -> diminuer tailleMin dans le script
+Poison
+	- + de platform a changer ? -> nbPlatformPoisoned
+Zone Triangulaire
+	- Delais d'activation trop long-> diminuer TimeToSetActiv
+	- Dur�e de vie trop longue apres l'activation ? -> diminuer TimeToDestroy
+Shoot
+	- Vitesse trop lente ? -> ShootingMove il faut modifier la var speedF
