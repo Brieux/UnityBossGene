@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aef0dfe5a993c41f48974650398c4123
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - disabledMaterial: {fileID: 2100000, guid: d3bf31b68c16047268b6996eaff147e8, type: 2}
+  - myMaterial: {fileID: 2100000, guid: fa639e53da4254c628bff056ced1c13c, type: 2}
+  - enabledTex: {fileID: 2800000, guid: 608e32b71206db14e9579140c239df33, type: 3}
+  - disabledTex: {fileID: 2800000, guid: e15bdc4b4bed2e54da3687f0b1e9268e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
